@@ -9,3 +9,6 @@ export ARCH=arm
 export CROSS_COMPILE="arm-linux-androideabi-"
 export ANDROID_DEV="$ANDROID_NDK/platforms/android-14/arch-arm/usr" 
 export HOSTCC=gcc
+
+#https://wiki.openssl.org/index.php/FIPS_Library_and_Android
+#https://wiki.openssl.org/index.php/Android
