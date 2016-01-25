@@ -7,8 +7,7 @@ PROTOBUFVER=2.6.1
 NDKROOT=/home/data/android/android-ndk-r10e
 TOOLCHAIN=arm-linux-androideabi-4.9
 PREBUILT=$NDKROOT/toolchains/$TOOLCHAIN
-PLATFORM=$NDKROOT/platforms/android-8/arch-arm
-SYSROOT=$PLATFORM
+SYSROOT=$NDKROOT/platforms/android-8/arch-arm
 
 GNUSTD=$NDKROOT/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a
 
@@ -19,8 +18,8 @@ export CXX="$PREBUILT/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++ --sysr
 
 export PATH=$PREBUILT/prebuilt/linux-x86_64/arm-linux-androideabi/bin:$PATH
 export CFLAGS=" -DANDROID -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16"
-export LDFLAGS="-Wl,-rpath-link=$PLATFORM/usr/lib -L$GNUSTD -L$PLATFORM/usr/lib"
-export CPPFLAGS="-I$PLATFORM/usr/include/ -I$GNUSTD/include -I$NDKROOT/sources/cxx-stl/gnu-libstdc++/4.9/include"
+export LDFLAGS="-Wl,-rpath-link=$SYSROOT/usr/lib -L$GNUSTD -L$SYSROOT/usr/lib"
+export CPPFLAGS="-I$SYSROOT/usr/include/ -I$GNUSTD/include -I$NDKROOT/sources/cxx-stl/gnu-libstdc++/4.9/include"
 
 export LIBS="-lc -lgnustl_static"
 
