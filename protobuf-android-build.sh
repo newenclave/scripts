@@ -2,7 +2,7 @@
 
 CURRENT=`pwd`
 PREFIX=`pwd`/protobuf
-PROTOBUFVER = 2.6.1
+PROTOBUFVER=2.6.1
 
 NDKROOT=/home/data/android/android-ndk-r10e
 TOOLCHAIN=arm-linux-androideabi-4.9
