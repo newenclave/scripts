@@ -25,7 +25,7 @@ export LIBS="-lc -lgnustl_static"
 
 (
 	cd /tmp
-	wget https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-$PROTOBUFVER.tar.gz
+	wget https://github.com/google/protobuf/releases/download/v$PROTOBUFVER/protobuf-$PROTOBUFVER.tar.gz
 	if [ -d /tmp/protobuf-$PROTOBUFVER ]
     	then
 		rm -rf /tmp/protobuf-$PROTOBUFVER
