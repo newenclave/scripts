@@ -14,7 +14,7 @@ ARCHNAME=arm-linux-androideabi
 TOOLCHAIN=$ARCHNAME-$GCCVER
 PREBUILDNAME=linux-x86_64
 
-PLATFORM=android-8
+PLATFORM=android-9
 PLATFORMARCH=arch-arm
 ABIVER=armeabi-v7a
 
