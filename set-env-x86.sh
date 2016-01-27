@@ -35,7 +35,7 @@ export CXX="$PREBUILT/bin/$PATH_CXX --sysroot=$SYSROOT"
 #export LD="$PREBUILT/bin/$PATH_LD --sysroot=$SYSROOT"
 
 export PATH=$PREBUILT/$ARCHNAME/bin:$PATH
-export CFLAGS=" -DANDROID=1"
+export CFLAGS=" "
 export LDFLAGS="-Wl,-rpath-link=$SYSROOT/usr/lib -L$GNUSTD -L$SYSROOT/usr/lib"
 export CPPFLAGS="-I$SYSROOT/usr/include/ -I$GNUSTD/include -I$NDKROOT/sources/cxx-stl/$STLVER/$GCCVER/include"
 

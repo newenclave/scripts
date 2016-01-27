@@ -37,7 +37,7 @@ export CXX="$PREBUILT/bin/$PATH_CXX --sysroot=$SYSROOT"
 #export LD="$PREBUILT/bin/$PATH_LD --sysroot=$SYSROOT"
 
 export PATH=$PREBUILT/$ARCHNAME/bin:$PATH
-export CFLAGS=" -DANDROID=1 -march=$MARCH -mfloat-abi=softfp -mfpu=vfpv3-d16"
+export CFLAGS=" -march=$MARCH -mfloat-abi=softfp -mfpu=vfpv3-d16"
 export LDFLAGS="-Wl,-rpath-link=$SYSROOT/usr/lib -L$GNUSTD -L$SYSROOT/usr/lib"
 export CPPFLAGS="-I$SYSROOT/usr/include/ -I$GNUSTD/include -I$NDKROOT/sources/cxx-stl/$STLVER/$GCCVER/include"
 
