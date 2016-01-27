@@ -18,8 +18,6 @@ PREBUILDNAME=linux-x86_64
 PLATFORM=android-9
 PLATFORMARCH=arch-x86
 
-MARCH="x86"
-
 STLVER=gnu-libstdc++
 STLLIB=gnustl_static
 
@@ -37,7 +35,7 @@ export CXX="$PREBUILT/bin/$PATH_CXX --sysroot=$SYSROOT"
 #export LD="$PREBUILT/bin/$PATH_LD --sysroot=$SYSROOT"
 
 export PATH=$PREBUILT/$ARCHNAME/bin:$PATH
-export CFLAGS=" -DANDROID -march=$MARCH -mfloat-abi=softfp -mfpu=vfpv3-d16"
+export CFLAGS=" -DANDROID=1"
 export LDFLAGS="-Wl,-rpath-link=$SYSROOT/usr/lib -L$GNUSTD -L$SYSROOT/usr/lib"
 export CPPFLAGS="-I$SYSROOT/usr/include/ -I$GNUSTD/include -I$NDKROOT/sources/cxx-stl/$STLVER/$GCCVER/include"
 
