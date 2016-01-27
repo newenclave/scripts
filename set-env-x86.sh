@@ -28,11 +28,11 @@ GNUSTD=$NDKROOT/sources/cxx-stl/$STLVER/$GCCVER/libs/$ABIVER
 
 PATH_CC=`ls $PREBUILT/bin | grep \\\-gcc$`
 PATH_CXX=`ls $PREBUILT/bin | grep \\\-g++$`
-#PATH_LD=`ls $PREBUILT/bin | grep \\\-ld$`
+PATH_LD=`ls $PREBUILT/bin | grep \\\-ld$`
 
 export CC="$PREBUILT/bin/$PATH_CC --sysroot=$SYSROOT"
 export CXX="$PREBUILT/bin/$PATH_CXX --sysroot=$SYSROOT"
-#export LD="$PREBUILT/bin/$PATH_LD --sysroot=$SYSROOT"
+export LD="$PREBUILT/bin/$PATH_LD --sysroot=$SYSROOT"
 
 export PATH=$PREBUILT/$ARCHNAME/bin:$PATH
 export CFLAGS=" "

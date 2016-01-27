@@ -34,7 +34,7 @@ PATH_CXX=`ls $PREBUILT/bin | grep \\\-g++$`
 
 export CC="$PREBUILT/bin/$PATH_CC --sysroot=$SYSROOT"
 export CXX="$PREBUILT/bin/$PATH_CXX --sysroot=$SYSROOT"
-#export LD="$PREBUILT/bin/$PATH_LD --sysroot=$SYSROOT"
+export LD="$PREBUILT/bin/$PATH_LD --sysroot=$SYSROOT"
 
 export PATH=$PREBUILT/$ARCHNAME/bin:$PATH
 export CFLAGS=" -march=$MARCH -mfloat-abi=softfp -mfpu=vfpv3-d16"
